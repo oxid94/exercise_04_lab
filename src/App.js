@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 
-// import CardsList from './components/CardsList';
-// import Form from './components/Form';
+import CardsList from './components/CardsList';
+import Form from './components/Form';
 
 import { list } from './list'
 import './App.css';
@@ -32,8 +32,8 @@ class App extends Component {
     
     return (
       <div className="container">
-        {/* <Form onSubmit={this.onHandleSubmit}/> */}
-        {/* <CardsList data={this.state.list}/> */}
+        <Form onSubmit={this.onHandleSubmit}/>
+        <CardsList data={this.state.list}/>
       </div>
     );
   }
