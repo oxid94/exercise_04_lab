@@ -18,7 +18,14 @@ class App extends Component {
   }
 
   onHandleSubmit(from, to) {
-    
+    const arr = this.state.list
+    // arr.push([from, to]);
+    // this.setState({
+    //   list: arr
+    // })
+    this.setState({
+      list: [...this.state.list, [from, to]]
+    })
   }
 
   render() {
